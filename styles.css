@@ -6,8 +6,34 @@ div {
     color: red;
 }
 
-.centered {
-    display: flex;
-    width: auto;
-    justify-content: center;
+.grid-container {
+    display: grid;
+    grid-template-columns: 20% 20%;
+    grid-template-rows: 20% 20% 20%;
+    grid-template-areas: 
+        "logo logo"
+        "search search"
+        "button-1 button-2";
+
+}
+
+.grid-item {
+    justify-self: center;
+    background-color: blue;
+}
+
+.grid-logo {
+    grid-area: logo;
+}
+
+.grid-search {
+    grid-area: search;
+}
+
+.grid-button-1 {
+    grid-area: button-1;
+}
+
+.grid-button-2 {
+    grid-area: button-2;
 }
