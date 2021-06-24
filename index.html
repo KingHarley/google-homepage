@@ -2,18 +2,32 @@
 <html lang="en">
     <head>
         <title>Google</title>
-        <link rel="stylesheet" href="styles.css"></link>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
+
+        <link rel="shortcut icon" 
+            href="https://lh3.googleusercontent.com/COxitqgJr1sJnIDe8-jiKhxDx1FrYbtRHKJ9z_hELisAlapwE9LUPh6fcXIfb5vwpbMl4xl9H9TRFPc5NOO8Sb3VSgIBrfRYvW6cUA">
+        
     </head>
     <body>
-        <h1>Google</h1>
         <div class="grid-container">
             <div class="grid-item grid-logo">
                 <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
             </div>
             <div class="grid-item grid-search">
-                <form>
-                    <input type="text">
-                </form>
+                <div class="flex-search">
+                    <div class="flex-search-icon">
+                        <span class="material-icons">search</span>
+                    </div>
+                    <div class="flex-search-input">
+                        <form class="flex-stretch">
+                            <input class="flex-stretch" type="text">
+                        </form>
+                    </div>
+                    
+                </div>
+                
             </div>
             <button class="grid-item grid-button-1" type="submit">Google Search</button>
             <button class="grid-item grid-button-2" type="submit">I'm Feeling Lucky</button>
